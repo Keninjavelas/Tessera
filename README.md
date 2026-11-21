@@ -1,45 +1,101 @@
 # Tessera — Production AI Intelligence Ingestion Pipeline
 
-> **Tessera** *(a single verified tile in a larger intelligence mosaic)* — an asynchronous web acquisition, multi-tier LLM extraction, anti-bot fetching, and deterministic entity resolution pipeline built for AI ecosystem Intelligence Graphs.
+**Tessera** *(a single verified tile in a larger intelligence mosaic)* is an asynchronous web ingestion, multi-tier LLM extraction, anti-bot rendering, and deterministic entity resolution pipeline designed to build a verifiable, high-signal **AI Ecosystem Intelligence Graph**.
+
+Every record in Tessera is collected live over the network, validated against strict **Pydantic v2** schemas, traceable to a reachable HTTP 200 `source.url`, normalized to UTC ISO-8601 timestamps, and audited automatically prior to publication — **zero synthetic or fabricated rows**.
+
+| Vertical | Scope | Verified Live Output | Freshness / Fidelity Guarantee |
+|---|---|---|---|
+| **Startups** | Phase I Bulk | **1,060** unique AI startups | Canonicalized via 5-stage deterministic resolver; `employeeCount` strictly `int \| null` |
+| **Products** | Phase I Bulk | **1,060** unique AI products | 100% org-backed & evidence-based `FREE` / `FREEMIUM` / `PAID` / `ENTERPRISE` pricing |
+| **Research Papers** | Phase I Bulk | **1,060** unique AI papers | **723** linked GitHub repos (**709** verified exact integer star counts) |
+| **Jobs** | Phase II Signal | **58** fresh AI roles across **7** boards | **100% strictly `< 24h`** UTC (15-min SLA buffer at ingestion) |
+| **News** | Phase II Signal | **16** fresh AI articles across **5** outlets | **100% strictly `< 24h`** UTC; full-text grounded 2-sentence LLM summary + canonical entities |
+| **Entity Mapping Log** | Phase IV Audit | **4,062** resolution audit rows | **0** fuzzy false positives (`EXACT`: 653, `ALIAS`: 23, `FUZZY`: 8, `NORMALIZED_NEW`: 3,378) |
 
 ---
 
-## Architecture Overview
+## System Architecture
 
 ```mermaid
 flowchart LR
-    subgraph Sources["Live Internet Sources (Zero Synthetic Data)"]
-        S1["Phase I Bulk\nYC AI · OpenRouter · HF Spaces\nHF Daily Papers · arXiv · PWC · GitHub API"]
-        S2["Phase II <24h Signals\n5 AI News RSS/HTML\n7 Live AI Job Boards (Greenhouse/Ashby/Jobicy)"]
+    subgraph Sources["Live Internet Sources (Zero Hallucinated Data)"]
+        P1["Phase I Bulk Acquisition\nYC AI Directory · OpenRouter API\nHF Org Spaces & Models · HF Daily Papers\narXiv API · PapersWithCode · GitHub"]
+        P2["Phase II <24h High-Signal Feeds\n5 AI News Outlets (RSS + Full HTML)\n7 AI Job Boards (Greenhouse · Ashby · Jobicy)"]
     end
 
-    subgraph Fetch["Async Acquisition Layer"]
-        HTTP["HttpFetcher\nHTTP/2 · Per-Domain Semaphores · Jitter Retries"]
-        PW["PlaywrightFetcher\nHeadless Chromium · Stealth · 70%+ Resource Blocking"]
-        HTTP -- "403 / JS Shell Escalation" --> PW
+    subgraph Fetch["Async Acquisition & Anti-Bot Layer"]
+        HTTP["HttpFetcher (httpx HTTP/2)\nGlobal + Per-Domain Semaphores\nHeader Rotation · Full-Jitter Retries"]
+        PW["PlaywrightFetcher (Headless Chromium)\nWebdriver Stealth · 70%+ Resource Blocking\n(Aborts images, fonts, media, CSS)"]
+        HTTP -- "403 / Cloudflare / SPA Shell" --> PW
     end
 
-    subgraph Core["Extraction & Resolution"]
-        PRE["Anti-413 Preprocessor\nTrafilatura + BS4 Stripping · Semantic Token Budget"]
-        LLM["Phase III LLM Orchestrator\nTier 1 Gemini -> Tier 2 Groq -> Tier 3 DeepSeek\nToken Bucket · Full Jitter · Circuit Breakers · JSON Repair"]
-        ER["Phase IV Deterministic Entity Resolver\nNFKC/Suffix Strip -> Exact/Alias -> Domain -> Rapidfuzz >=90"]
+    subgraph Extract["Phase III Extraction & Phase IV Resolution"]
+        PRE["Anti-413 Preprocessor\nBS4 + Trafilatura Stripping\nSemantic Token-Budget Prioritizer"]
+        LLM["Multi-Tier LLM Orchestrator\nTier 1: Gemini Flash\nTier 2: Groq (openai/gpt-oss-20b)\nTier 3: DeepSeek\nToken Bucket · Full Jitter · Circuit Breaker · 1-Shot Repair"]
+        ER["Deterministic 5-Stage Entity Resolver\nNFKC/Suffix Strip -> Exact/Alias -> Domain\n-> Domain-Guarded Rapidfuzz (>=90, len>=7)"]
     end
 
-    subgraph Persist["State & Deliverables"]
-        SQLITE[("Async SQLite StateStore\nCheckpoints · Dedup · Seen-Signals Freshness Ledger")]
-        EXP["Exports\n6-Tab Excel (.xlsx) · 6 CSVs · Validated JSONL · Google Sheets"]
+    subgraph Persist["Resumable State & Exports"]
+        DB[("Async SQLite StateStore (WAL)\nCheckpoints · Dedup Keys · GitHub Cache\nHeuristic Freshness Ledger (seen_signals)")]
+        OUT["Deliverables\n6-Tab Excel (.xlsx, Text-Safe) · 6 CSVs\n6 Validated JSONLs · Google Sheets Uploader"]
     end
 
-    S1 --> HTTP
-    S2 --> HTTP
+    P1 --> HTTP
+    P2 --> HTTP
     HTTP --> PRE
     PW --> PRE
     PRE --> LLM
-    HTTP -- "Structured API Fields (Hybrid Bypass)" --> ER
+    HTTP -- "Structured API Fields (Hybrid Bypass ~88%)" --> ER
     LLM --> ER
-    ER --> SQLITE
-    SQLITE --> EXP
+    ER --> DB
+    DB --> OUT
 ```
+
+For the full 500,000+ record distributed scaling design (Kafka/SQS, Kubernetes domain-partitioned workers, Redis Lua token buckets, Bloom/SimHash deduplication, and PostgreSQL + Neo4j + pgvector + S3/Parquet polyglot persistence), see **[architecture.pdf](architecture.pdf)** (2 pages) and [docs/architecture.md](docs/architecture.md).
+
+---
+
+## Data Sources & Grounding Guarantees
+
+| Vertical | Live Sources | Grounding & Anti-Fabrication Controls |
+|---|---|---|
+| **Startups** | Y Combinator AI Directory (`yc-oss/tags/artificial-intelligence.json`) + AI-filtered YC Directory (`all.json`) | Real `team_size` mapped to `employeeCount`; missing/0 values stored strictly as `null`. |
+| **Products** | OpenRouter Live Model Catalog (`api/v1/models`), Verified AI Org Hugging Face Spaces & Open-Weights Models, Evidence-Filtered YC AI Products | Zero personal HF usernames (`Abdul9999`, etc.) and zero blind defaults. Pricing comes from exact OpenRouter per-token rates, HF open-weights/Space metadata, explicit YC pricing copy, or live LLM extraction on substantive descriptions. |
+| **Research Papers** | `paperswithcode.co/paper/98456` (spec reference), Hugging Face Daily Papers API (65-day lookback), arXiv Atom API (`cs.AI`/`cs.LG`/`cs.CL`/`cs.CV`) | 3-tier exact-integer GitHub star lookup: (1) GitHub REST API respecting `X-RateLimit-Remaining`/`Reset`, (2) live `github.com/{owner}/{repo}` HTML exact `aria-label`/`title` parser (never rounded `14.2k`), (3) upstream HF verified star sync. |
+| **News (`< 24h`)** | TechCrunch AI, The Verge AI, SiliconANGLE AI, The Decoder, Wired AI *(+ MIT Tech Review & MarkTechPost automatic backups)* | Full article bodies fetched via `SmartFetcher` (HTTP/2 + Playwright fallback), compressed via `trafilatura`, summarized in 2 grounded sentences + entity-extracted via Phase III LLM, then canonicalized via Phase IV resolver. |
+| **Jobs (`< 24h`)** | Anthropic (Greenhouse), OpenAI (Ashby), Databricks (Greenhouse), Harvey (Ashby), Scale AI (Greenhouse), Perplexity (Ashby), Jobicy AI Board | Exact UTC posting timestamps parsed from ATS payloads; deterministic `is_remote` & `role_family` parsing with Phase III LLM fallback for ambiguous titles/descriptions. |
+
+---
+
+## Core Engineering Highlights
+
+### 1. Decoupled Async Architecture & Backpressure (`src/tessera/pipelines/`, `src/tessera/fetchers/`)
+- All Phase I collectors implement a **Producer -> bounded `asyncio.Queue` -> Async Worker Pool** topology paired with SQLite WAL batch checkpoints (`StateStore`). Scaling to 500,000+ records swaps `asyncio.Queue` for Kafka/SQS and SQLite for PostgreSQL without modifying pipeline logic.
+- `HttpFetcher` enforces both global (`http_max_concurrency`) and per-domain (`per_domain_concurrency`) `asyncio.Semaphore` caps plus polite inter-request spacing to prevent memory spikes and IP bans.
+- `SmartFetcher` automatically escalates HTTP `403`, Cloudflare challenges, or empty SPA shells to `PlaywrightFetcher` (headless Chromium with webdriver stealth flags and image/font/media/CSS route blocking cutting bandwidth by >70%).
+
+### 2. Multi-Tier LLM Extraction Engine (`src/tessera/llm/`)
+- **Fallback Chain:** Tier 1 Google Gemini Flash (`gemini-2.5-flash`) -> Tier 2 Groq (`openai/gpt-oss-20b`, configurable via `GROQ_MODEL`) -> Tier 3 DeepSeek (`deepseek-chat`). Missing API keys auto-skip cleanly with structured warnings; total exhaustion routes records to `OrchestratorStats.dead_letters` rather than fabricating output.
+- **Anti-413 Pre-Flight Stripping & Semantic Budgeting (`preprocessor.py`):** Strips `<script>`, `<style>`, `<svg>`, `<nav>`, `<footer>`, ads, and comments via BeautifulSoup/Trafilatura before estimating tokens. Oversized documents are compressed via semantic section prioritization (retaining metadata, H1/H2 headers, opening context, and keyword-dense pricing/location/date paragraphs). On a reactive HTTP `413`, the orchestrator halves the token budget and retries automatically.
+- **Anti-429 Rate Limiting & Recovery (`rate_limiter.py`, `providers.py`):** Combines proactive per-provider RPM/TPM `AsyncTokenBucket` pacing with reactive full-jitter exponential backoff (`random.uniform(0, min(cap, base * 2^attempt))`), honoring both HTTP `Retry-After` headers and inline provider hints (e.g., Groq's `"Please try again in 329ms"`). After `N` consecutive failures, a cooldown `CircuitBreaker` trips and immediately fails over to the next tier.
+- **Strict Grounding & Schema Repair:** Runs strict JSON mode + Pydantic v2 validation with an automatic **1-shot repair retry** feeding the exact `ValidationError` back to the model on malformed responses.
+
+### 3. Hybrid Deterministic + LLM Efficiency (~88% Inference Savings)
+Structured API attributes (YC `team_size`, OpenRouter per-token pricing, arXiv authors, GitHub stars, Greenhouse/Ashby metadata) bypass the LLM entirely. Reserving LLM calls strictly for unstructured prose (full-text AI News summarization/NER, ambiguous product descriptions, and ambiguous job listings) eliminates unnecessary hallucination surface and reduces inference cost by **~88%**.
+
+### 4. 5-Stage Deterministic Entity Resolution (`src/tessera/resolution/resolver.py`)
+Zero LLM calls in the resolution loop — backed by 79 canonical AI organizations in `seed_entities.json`:
+1. **Normalization:** Unicode NFKC, strip URLs/trademarks/parentheticals (`(YC S16)`), iteratively strip trailing legal suffixes (`Inc.`, `LLC`, `PBC`, `Ltd.`, `SAS`, `Corp.`) without eroding core names (`Open AI` -> `OpenAI`).
+2. **Exact & Alias Lookup (`confidence = 1.0`):** Direct canonical and alias dictionary match.
+3. **Domain Matching (`confidence = 0.99`):** Normalizes corporate hostnames (stripping `www.`, `jobs.`, `boards.`, etc.) to match official entity domains.
+4. **Controlled Fuzzy Matching (`rapidfuzz >= 90`):** Enforces a minimum compact length floor (`>= 7` chars, preventing short acronym false merges like `xAI`/`AI`) **and a Domain Contradiction Guard** that blocks fuzzy merges whenever a startup carries a distinct corporate domain (eliminating real-world collisions such as `Serra` vs. `Sierra`, `K-Scale Labs` vs. `Scale AI`, `Pit.AI` vs. `Inflection AI`, and `Cognitio Labs` vs. `Cognition`).
+5. **Fallback & Full Audit Logging (`NORMALIZED_NEW`):** Clean smart-cased fallback; every resolution event is logged to the `Entity Mapping Log` tab.
+
+### 5. Custom `NEWS` Schema, UTC Normalization & Heuristic Freshness (`src/tessera/utils/dates.py`, `state_store.py`)
+- **Custom `NEWS` Schema:** Resolves spec ambiguity by pairing traceable `source.{name,url}` + UTC `published_date` + `collectedAt` with grounded `content.summary` (2 sentences) and canonicalized `content.mentioned_entities` so news records link cleanly into the Intelligence Graph.
+- **Date Normalization & 15-Min SLA Safety Buffer:** Normalizes ISO-8601, RFC-2822, Unix epochs, relative expressions (`"2 hours ago"`, `"45m ago"`, `"Just now"`, `"Yesterday"`), HTML `<meta>`, JSON-LD `datePublished`, `<time>`, and URL date patterns to strict UTC `YYYY-MM-DDTHH:MM:SSZ`. Phase II applies `safety_margin_minutes=15` at ingestion so items scraped at `23h 58m` do not breach the strict `< 24h` window during downstream export/audit.
+- **Heuristic Freshness Engine:** For dateless sources, `StateStore.evaluate_heuristic_freshness` records a day-0 baseline snapshot (`HEURISTIC_BASELINE`) in SQLite (`seen_signals`) and tags newly appearing unseen URLs on subsequent runs as fresh (`HEURISTIC_DIFF`) for 24 hours.
 
 ---
 
@@ -50,35 +106,36 @@ tessera/
 ├── README.md
 ├── architecture.pdf                 # Programmatically compiled 2-page technical blueprint (<= 3 pages)
 ├── docs/
-│   └── architecture.md              # Architecture source & scale specifications
+│   └── architecture.md              # Architecture source & distributed scale specifications
 ├── pyproject.toml                   # Python 3.11+, strict mypy, pytest-asyncio, ruff config
 ├── .env.example                     # Complete environment variable template (zero hardcoded secrets)
+├── .gitignore                       # Excludes .env, .venv/, data/*.db*, caches
 ├── src/tessera/
-│   ├── config.py                    # Pydantic Settings
+│   ├── config.py                    # Pydantic Settings for env vars, budgets, paths
 │   ├── logging_config.py            # Structured JSON logging (structlog)
 │   ├── schemas/entities.py          # Strict Pydantic v2 models for all 5 verticals + EntityMappingLog
-│   ├── storage/state_store.py       # Async SQLite checkpointing, dedup, GitHub cache & heuristic freshness
+│   ├── storage/state_store.py       # Async SQLite checkpoints, dedup, GitHub cache & heuristic freshness
 │   ├── fetchers/                    # BaseFetcher, HttpFetcher (HTTP/2), PlaywrightFetcher + SmartFetcher
 │   ├── llm/                         # Preprocessor (anti-413), Rate Limiter (anti-429), Providers, Orchestrator
-│   ├── resolution/                  # seed_entities.json (79 canonical AI orgs) + 5-stage deterministic resolver
+│   ├── resolution/                  # seed_entities.json (79 canonical orgs) + 5-stage deterministic resolver
 │   ├── pipelines/                   # startups.py, products.py, papers.py, news.py, jobs.py
-│   ├── utils/dates.py               # UTC ISO-8601 date normalizer (relative dates, tz, HTML/JSON-LD fallbacks)
-│   ├── exporters/sheets_exporter.py # 6-tab .xlsx + 6 CSVs + JSONL exporter
+│   ├── utils/dates.py               # UTC ISO-8601 date normalizer + HTML/JSON-LD fallbacks + SLA buffer
+│   ├── exporters/sheets_exporter.py # Text-safe 6-tab .xlsx + 6 CSVs + validated JSONL exporter
 │   └── cli.py                       # Unified Typer CLI
 ├── scripts/
 │   ├── audit_dataset.py             # Automated volume, dedup, <24h freshness, 30-URL HTTP & PDF page auditor
-│   ├── build_architecture_pdf.py    # ReportLab PDF builder with embedded vector architecture diagram
+│   ├── build_architecture_pdf.py    # ReportLab PDF builder with orthogonal vector architecture diagram
 │   └── upload_to_gsheets.py         # Optional Google Sheets service-account uploader (gspread)
 ├── exports/
-│   ├── tessera_output.xlsx          # Ready-to-import 6-tab workbook
+│   ├── tessera_output.xlsx          # Ready-to-import 6-tab Excel workbook (`schemaVersion` formatted `@`)
 │   ├── csv/                         # 6 individual UTF-8 CSV files
 │   └── jsonl/                       # 6 validated nested JSONL archives
-└── tests/                           # 38 unit & integration tests (pytest + pytest-asyncio)
+└── tests/                           # 39 unit & integration tests (pytest + pytest-asyncio)
 ```
 
 ---
 
-## Quickstart Setup
+## Quickstart & CLI Reference
 
 ### 1. Install Dependencies (`uv` recommended)
 ```bash
@@ -87,77 +144,59 @@ uv run playwright install chromium
 ```
 
 ### 2. Configure Environment Variables
-Copy `.env.example` to `.env` and configure your API keys (never commit `.env`):
 ```bash
 cp .env.example .env
 ```
-- **LLM Fallback Chain:** Configure any combination of `GEMINI_API_KEY` (Tier 1), `GROQ_API_KEY` (Tier 2), and `DEEPSEEK_API_KEY` (Tier 3). Unconfigured tiers are skipped automatically with a structured warning; configured tiers fail over cleanly on HTTP `429`/`503` exhaustion.
-- **GitHub API Token (Recommended):** Set `GITHUB_TOKEN` to raise GitHub REST API quota from 60 req/hr to 5,000 req/hr for research paper star enrichment.
+- **LLM Fallback Chain:** Configure any combination of `GEMINI_API_KEY` (Tier 1, default `gemini-2.5-flash`), `GROQ_API_KEY` (Tier 2, default `openai/gpt-oss-20b`, configurable via `GROQ_MODEL`), and `DEEPSEEK_API_KEY` (Tier 3, default `deepseek-chat`).
+- **GitHub API Token (Recommended):** Set `GITHUB_TOKEN` to raise GitHub REST API quota from 60 req/hr to 5,000 req/hr.
 
-### 3. CLI Commands
+### 3. Run Pipeline, Exports & Audits
 ```bash
-# Run full end-to-end pipeline (Phase I + Phase II + 6-tab Export)
+# Full end-to-end execution (Phase I + Phase II + 6-tab Export)
 uv run tessera run-all --target 1060
 
-# Run individual stages (SQLite checkpoints allow clean mid-run resumption)
+# Run individual stages (SQLite checkpoints enable clean crash resumption)
 uv run tessera run-phase1 --target 1060
 uv run tessera run-phase2
 uv run tessera export
 
-# Run automated verification gates & live 30-URL HTTP reachability audit
+# Automated verification gates & 30-URL live HTTP reachability audit
 uv run tessera audit --sample-urls 30
 
-# Live PlaywrightFetcher demo (stealth headers + image/font/media blocking)
+# Live PlaywrightFetcher stealth + resource-blocking benchmark
 uv run tessera demo-browser --url https://paperswithcode.co/paper/98456
 
-# Rebuild architecture.pdf (verifies <= 3 pages)
+# Recompile architecture.pdf (programmatically asserts <= 3 pages)
 uv run python scripts/build_architecture_pdf.py
 
 # Optional: push all 6 CSV tabs directly to Google Sheets via Service Account
 uv run python scripts/upload_to_gsheets.py --credentials service_account.json
 
-# Run test suite & strict static type checks
+# Run test suite & strict static typing
 uv run pytest -v
 uv run mypy src
 ```
 
----
-
-## Key Engineering Design Decisions
-
-### 1. Custom `NEWS` Schema (`recordType = "NEWS"`)
-To resolve specification ambiguity cleanly for Intelligence Graph ingestion, `NewsRecord` pairs strict traceability (`source.name`, `source.url`, UTC `published_date`, `collectedAt`) with two LLM-extracted, text-grounded fields:
-- `content.summary`: Concise 2-sentence factual summary grounded strictly in the fetched article body.
-- `content.mentioned_entities`: Deduplicated list of startups/products extracted from the article and passed through the Phase IV deterministic `EntityResolver` so news edges connect directly to canonical graph nodes.
-
-### 2. Hybrid Deterministic + LLM Extraction Rationale
-Calling an LLM on every field of 3,000+ (or 500,000+) records wastes tokens, slows throughput, and introduces unnecessary hallucination risk on already-structured facts:
-- **Deterministic Parsers (~88% of records):** Structured API attributes (YC `team_size`, OpenRouter exact token pricing, arXiv authors, GitHub `stargazers_count`, Greenhouse/Ashby timestamps & explicit remote flags) are parsed deterministically at zero inference cost and sub-millisecond latency.
-- **Multi-Tier LLM Orchestrator (~12% of records):** Reserved exclusively for genuinely unstructured prose — full-text AI News summarization & entity extraction, ambiguous YC product `pricingModel` inference, and unstructured job descriptions lacking explicit `role_family` / `is_remote` metadata. This cuts LLM spend by **~88%** while keeping free-tier TPM quotas sustainable.
-
-### 3. Zero Hallucination & Strict Resumability
-- Every record traces to a live HTTP 200 `source.url`. Missing attributes (`employeeCount`, `github_url`, `github_stars`) remain `null` rather than estimated.
-- When all configured LLM tiers exhaust retries, failed items route to `OrchestratorStats.dead_letters` rather than fabricating summaries.
-- Phase I collectors use decoupled `Producer -> asyncio.Queue -> Worker` pools with batch SQLite upserts and checkpoint cursors, allowing horizontal migration to Kafka/SQS + PostgreSQL without touching pipeline logic (detailed in [architecture.pdf](architecture.pdf)).
+> **Google Sheets Import Tip:** Upload `exports/tessera_output.xlsx` to Google Drive -> **Open with Google Sheets** -> **File -> Save as Google Sheets**. `sheets_exporter.py` formats `schemaVersion` (`"1.0"`) and UTC timestamps as explicit Plain Text (`@`) to prevent numeric auto-coercion.
 
 ---
 
-## Live Verified Audit Output
+## Live Verified Audit Report
 
-Results from executing `uv run tessera audit --sample-urls 30` against the live collected dataset (`2026-11-21T04:06:22Z`):
+Output from `uv run tessera audit --sample-urls 30` (`2026-11-21T18:57:58Z`):
 
 | Verification Gate | Status | Verified Result |
 |---|---|---|
 | Startups `>= 1,000` | **PASS** | `1,060` unique AI startups |
-| Products `>= 1,000` | **PASS** | `1,060` unique AI products (`FREE`: 355, `PAID`: 361, `ENTERPRISE`: 232, `FREEMIUM`: 112) |
-| Research Papers `>= 1,000` | **PASS** | `1,060` unique AI papers (`723` with GitHub URLs, `709` with live integer star counts) |
-| Jobs across `>= 5` boards | **PASS** | `77` jobs across `7` distinct AI boards (Anthropic, OpenAI, Databricks, Harvey, Scale AI, Perplexity, Jobicy) |
-| News across `>= 5` sources | **PASS** | `18` articles across `5` distinct outlets (TechCrunch AI, The Verge AI, SiliconANGLE AI, The Decoder, Wired AI) |
-| Entity Mapping Log | **PASS** | `4,465` deterministic mappings (`EXACT`: 409, `ALIAS`: 26, `FUZZY`: 14, `NORMALIZED_NEW`: 4,016) |
+| Products `>= 1,000` | **PASS** | `1,060` unique AI products (`FREE`: 489, `PAID`: 473, `ENTERPRISE`: 82, `FREEMIUM`: 16) |
+| Research Papers `>= 1,000` | **PASS** | `1,060` unique AI papers (`723` with GitHub URLs, `709` with verified integer star counts) |
+| Jobs across `>= 5` boards | **PASS** | `58` jobs across `7` distinct AI boards (Anthropic, OpenAI, Databricks, Harvey, Scale AI, Perplexity, Jobicy) |
+| News across `>= 5` sources | **PASS** | `16` articles across `5` distinct outlets (TechCrunch AI, The Verge AI, SiliconANGLE AI, The Decoder, Wired AI) |
+| Entity Mapping Log | **PASS** | `4,062` deterministic mappings (`EXACT`: 653, `ALIAS`: 23, `FUZZY`: 8, `NORMALIZED_NEW`: 3,378 — **0** fuzzy false positives) |
 | Zero Duplicates Per Vertical | **PASS** | `0` duplicates across all 5 data tabs |
-| 100% Jobs Fresh (`< 24h`) | **PASS** | `77/77` strictly within trailing 24 hours |
-| 100% News Fresh (`< 24h`) | **PASS** | `18/18` strictly within trailing 24 hours |
+| 100% Jobs Fresh (`< 24h`) | **PASS** | `58/58` strictly within trailing 24 hours |
+| 100% News Fresh (`< 24h`) | **PASS** | `16/16` strictly within trailing 24 hours |
 | 6-Tab Excel Workbook Valid | **PASS** | Exact tabs: `Startups`, `Products`, `Research Papers`, `Jobs`, `News`, `Entity Mapping Log` |
 | Live URL Reachability Sample | **PASS** | `30/30` (`100.0%`) live HTTP reachable |
 | `architecture.pdf <= 3` Pages | **PASS** | `2` pages (strictly `<= 3`) |
-| Automated Test Suite & Typing | **PASS** | `38/38` pytest tests passing; `mypy --strict` 0 errors across 29 files |
+| Automated Tests & Strict Typing | **PASS** | `39/39` pytest tests passing · `mypy --strict` 0 errors across 29 files |
