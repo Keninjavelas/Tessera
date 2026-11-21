@@ -15,6 +15,23 @@ Every record in Tessera is collected live over the network, validated against st
 
 ---
 
+## Demo Walkthrough
+
+[![Tessera End-to-End Demo Preview](assets/tessera_demo.gif)](assets/tessera_demo.mp4)
+
+> **Full HD Walkthrough (`1280×720`, 30 fps, `70.8s`, 2.00 MB):** [**Watch / Download `assets/tessera_demo.mp4`**](assets/tessera_demo.mp4) · [Static HD Poster (`assets/tessera_demo_poster.png`)](assets/tessera_demo_poster.png) *(All terminal outputs, metrics, CSV rows, and `architecture.pdf` previews are captured directly from this live build.)*
+
+| Timestamp | Chapter | What's Demonstrated |
+|---|---|---|
+| `0:00` | **01 · Architecture Overview** | End-to-end async flow (`httpx + Playwright` → Multi-Tier LLM → Deterministic Resolver → 6-Tab Audit) |
+| `0:09` | **02 · Verification & Typing** | Live CLI outputs of `uv run pytest -q` (**39/39 passed**) & `uv run mypy src` (**0 strict errors**) |
+| `0:18` | **03 · Multi-Tier LLM Resilience** | Anti-413 HTML stripping/token budgeting, Tier 1→2→3 failover, inline `"try again in Xms"` & full jitter |
+| `0:29` | **04 · Deterministic Entity Resolution** | Real `EXACT` / `ALIAS` / `FUZZY` rows from `entity_mapping_log.csv` + **Domain Contradiction Guard** |
+| `0:41` | **05 · Live Audit & 6-Tab Dataset** | Live `tessera audit --sample-urls 30` (**13/13 PASS**) + real sample rows across all 6 exported tabs |
+| `0:54` | **06 · 500K+ Scale Blueprint** | Rendered Page 1 & Page 2 of `architecture.pdf` + 4 distributed scale pillars & quickstart CLI |
+
+---
+
 ## System Architecture
 
 ```mermaid
