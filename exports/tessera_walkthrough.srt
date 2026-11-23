@@ -1,0 +1,207 @@
+1
+00:00:00,500 --> 00:00:07,462
+This is Tessera, a Python 3.11 async ingestion, extraction, and entity resolution pipeline for an AI Intelligence Graph.
+
+2
+00:00:07,462 --> 00:00:14,540
+Every Phase One collector runs a decoupled Producer, bounded asyncio Queue, and Worker pool—so scaling from three thousand
+
+3
+00:00:14,540 --> 00:00:21,966
+local records to five hundred thousand distributed nodes swaps queue and storage adapters without touching business logic. Batch
+
+4
+00:00:21,966 --> 00:00:27,188
+checkpoints in async SQLite WAL mode let crashed runs resume cleanly with zero duplicates.
+
+5
+00:00:28,300 --> 00:00:37,484
+Here are the live exported tabs in tessera_output.xlsx. Startups holds 1,060 unique AI companies from the Y Combinator
+
+6
+00:00:37,484 --> 00:00:48,848
+directory, keeping missing headcounts strictly null. Products holds 1,060 items from OpenRouter's live token-pricing API, verified AI organization
+
+7
+00:00:48,848 --> 00:00:58,733
+spaces and models on Hugging Face, and evidence-filtered YC listings—zero personal usernames and zero blind defaults: 490 Free,
+
+8
+00:00:58,733 --> 00:01:01,924
+473 Paid, 81 Enterprise, and 16 Freemium.
+
+9
+00:01:03,424 --> 00:01:11,169
+Research Papers captures 1,060 AI papers across Papers With Code, Hugging Face Daily Papers, and arXiv, with 725
+
+10
+00:01:11,169 --> 00:01:18,014
+GitHub repos and 711 verified integer star counts. Phase Two ingests 24 jobs across 6 boards and 11
+
+11
+00:01:18,014 --> 00:01:25,897
+articles across 5 AI news outlets, all strictly under twenty-four hours UTC. Our custom NewsRecord adds a grounded
+
+12
+00:01:25,897 --> 00:01:34,264
+two-sentence summary and canonical entities, and Excel Plain-Text formatting keeps schemaVersion at 1.0 in Google Sheets.
+
+13
+00:01:35,397 --> 00:01:44,544
+In Phase Three, preprocessor.py strips scripts, styles, SVGs, navigation, and ads via BeautifulSoup and Trafilatura, cutting payload size
+
+14
+00:01:44,544 --> 00:01:53,824
+up to ninety percent. If text still exceeds our six-thousand-token budget, prepare_llm_context scores paragraphs by opening context, domain
+
+15
+00:01:53,824 --> 00:02:01,769
+keywords, and pricing or date cues instead of blind truncation—and halves the budget automatically on any reactive HTTP
+
+16
+00:02:01,769 --> 00:02:02,037
+413.
+
+17
+00:02:03,537 --> 00:02:11,744
+For rate limits in rate_limiter.py, each provider enforces an async RPM and TPM token bucket proactively. On HTTP
+
+18
+00:02:11,744 --> 00:02:22,131
+429 or 503, compute_full_jitter_backoff honors Retry-After or applies AWS full jitter so concurrent coroutines don't trigger synchronized retry
+
+19
+00:02:22,131 --> 00:02:28,233
+storms. Three failures trip a 45-second circuit breaker for immediate tier failover.
+
+20
+00:02:29,733 --> 00:02:40,394
+In providers.py, _parse_retry_after also extracts Groq's inline millisecond wait hints from 429 error bodies alongside standard headers. Orchestrator.py
+
+21
+00:02:40,394 --> 00:02:47,548
+chains Tier 1 Gemini 2.5 Flash, Tier 2 Groq gpt-oss-20b, and Tier 3 DeepSeek with strict Pydantic JSON
+
+22
+00:02:47,548 --> 00:02:57,437
+mode, one-shot schema repair, and dead-lettering on exhaustion. Hybrid deterministic parsing saves roughly eighty-eight percent of LLM spend;
+
+23
+00:02:57,437 --> 00:03:03,189
+live Phase Two scored 17 of 17 with 2 rate-limit recoveries and zero dead letters.
+
+24
+00:03:04,326 --> 00:03:12,741
+Phase Four is 100 percent deterministic entity resolution—zero LLM cost or variance—across five stages backed by seventy-nine seed
+
+25
+00:03:12,741 --> 00:03:19,666
+AI organizations. During our own data audit, we caught four real fuzzy false merges: Serra into Sierra, Pit
+
+26
+00:03:19,666 --> 00:03:26,203
+AI into Inflection AI, Cognitio Labs into Cognition, and K-Scale Labs into Scale AI. The fix on lines
+
+27
+00:03:26,203 --> 00:03:32,935
+280 to 294 raises the minimum fuzzy length to seven and adds a Domain Contradiction Guard blocking fuzzy
+
+28
+00:03:32,935 --> 00:03:35,718
+merges whenever corporate domains disagree.
+
+29
+00:03:37,218 --> 00:03:44,645
+Across 3,993 logged mappings on the left, 612 matched exact, 9 matched aliases like Perplexity.ai and Facebook AI
+
+30
+00:03:44,645 --> 00:03:52,796
+Research, and all 8 fuzzy matches are legitimate Hugging Face sub-organizations—zero false positives. On the right, all four
+
+31
+00:03:52,796 --> 00:03:56,082
+prior collisions are locked into regression tests.
+
+32
+00:03:57,216 --> 00:04:05,843
+In dates.py on the left, our UTC normalizer parses ISO, RFC-2822, relative strings, meta tags, and JSON-LD. A
+
+33
+00:04:05,843 --> 00:04:15,578
+fifteen-minute ingestion safety margin ensures jobs scraped at 23 hours 58 minutes never breach the 24-hour boundary during
+
+34
+00:04:15,578 --> 00:04:24,205
+export and audit. On the right, dateless pages use our SQLite baseline ledger so newly appearing URLs receive
+
+35
+00:04:24,205 --> 00:04:25,392
+HEURISTIC_DIFF.
+
+36
+00:04:26,892 --> 00:04:34,158
+In papers.py, our three-tier GitHub star client queries the REST API first, falls back to exact-integer HTML parsing
+
+37
+00:04:34,158 --> 00:04:41,738
+via aria-label and title attributes—never rounded k-strings—and uses Hugging Face sync as a final fallback. On the right,
+
+38
+00:04:41,738 --> 00:04:50,571
+HttpFetcher caps concurrency with per-domain semaphores while SmartFetcher escalates 403 or SPA shells to stealth Playwright blocking images,
+
+39
+00:04:50,571 --> 00:04:51,636
+fonts, and media.
+
+40
+00:04:52,759 --> 00:05:02,428
+On the left, pytest passes thirty-nine of thirty-nine async unit and integration tests covering 429/413 failover, fuzzy regressions,
+
+41
+00:05:02,428 --> 00:05:10,559
+date heuristics, and the HTML star parser, with zero strict mypy errors across twenty-nine files. On the right,
+
+42
+00:05:10,559 --> 00:05:19,056
+tessera audit passes all thirteen gates: 1,060 startups, 1,060 products, 1,060 papers, 100 percent fresh 24 jobs and
+
+43
+00:05:19,056 --> 00:05:26,527
+11 news articles, zero duplicates, 30/30 (100.0%) reachable, and a verified two-page architecture PDF.
+
+44
+00:05:27,627 --> 00:05:35,683
+Finally, architecture.pdf details what breaks at fifty workers: SQLite write locks, local queues, and in-process token buckets. Page
+
+45
+00:05:35,683 --> 00:05:43,007
+One replaces them without rewriting core logic: a domain-partitioned Kafka or Redis Streams frontier feeding four to six
+
+46
+00:05:43,007 --> 00:05:50,453
+stateless K8s HTTP/2 pods for twenty-three records per second sustained, plus a centralized LLM Gateway using atomic Redis
+
+47
+00:05:50,453 --> 00:05:52,467
+Lua token buckets and Batch APIs.
+
+48
+00:05:53,967 --> 00:06:03,341
+Page Two covers two-tier distributed deduplication—URL canonicalization, a Redis Bloom Filter, PostgreSQL SHA-256 plus SimHash, Redis lease locks,
+
+49
+00:06:03,341 --> 00:06:11,881
+and idempotent upserts—paired with polyglot storage: S3 Parquet for immutable replay, PostgreSQL for ACID truth and star time-series,
+
+50
+00:06:11,881 --> 00:06:16,311
+Neo4j for multi-hop graph queries, and pgvector for semantic linking.
+
+51
+00:06:17,811 --> 00:06:26,583
+The full codebase, tests, verified six-tab exports, and architecture PDF reproduce end-to-end with three CLI commands. Thanks for
+
+52
+00:06:26,583 --> 00:06:27,195
+watching.

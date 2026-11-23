@@ -86,6 +86,14 @@ JOB_BOARDS: tuple[JobBoardConfig, ...] = (
         max_jobs=15,
     ),
     JobBoardConfig(
+        name="Greenhouse — xAI",
+        platform="greenhouse",
+        endpoint="https://boards-api.greenhouse.io/v1/boards/xai/jobs",
+        default_company="xAI Corp.",
+        default_domain="x.ai",
+        max_jobs=15,
+    ),
+    JobBoardConfig(
         name="Ashby — Perplexity",
         platform="ashby",
         endpoint="https://api.ashbyhq.com/posting-api/job-board/perplexity",

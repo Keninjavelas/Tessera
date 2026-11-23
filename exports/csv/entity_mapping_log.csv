@@ -1,4 +1,74 @@
 raw_name,canonical_name,match_method,confidence,record_type,source_url
+Signal,Signal,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/
+Windows,Windows,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/
+Android,Android,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/
+macOS/iOS,macOS/iOS,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/
+Wells Fargo,Wells Fargo,NORMALIZED_NEW,0.7,NEWS,https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/
+Amazon,Amazon,NORMALIZED_NEW,0.7,NEWS,https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/
+Meta,Meta,NORMALIZED_NEW,0.7,NEWS,https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/
+Muse,Muse,NORMALIZED_NEW,0.7,NEWS,https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/
+United,United,NORMALIZED_NEW,0.7,NEWS,https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/
+Citibank,Citibank,NORMALIZED_NEW,0.7,NEWS,https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/
+PNC,Pnc,NORMALIZED_NEW,0.7,NEWS,https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/
+American Express,American Express,NORMALIZED_NEW,0.7,NEWS,https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/
+Claude Opus 5.5,Claude Opus 5.5,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/
+GPT-6 Astra,GPT-6 Astra,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/
+Anthropic,Anthropic,EXACT,1.0,NEWS,https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/
+Nvidia,NVIDIA,EXACT,1.0,NEWS,https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/
+OpenAI,OpenAI,EXACT,1.0,NEWS,https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/
+H200 chips,H200 chips,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/
+HammerHAI,HammerHAI,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/21/sovereignty-data-not-chips-stuttgart-sovereign-ai-factory-sc26/
+Hewlett Packard Enterprise Co.,Hewlett Packard Enterprise,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/21/sovereignty-data-not-chips-stuttgart-sovereign-ai-factory-sc26/
+Nvidia Corp.,NVIDIA,EXACT,1.0,NEWS,https://siliconangle.com/2026/11/21/sovereignty-data-not-chips-stuttgart-sovereign-ai-factory-sc26/
+Grace Blackwell chips,Grace Blackwell chips,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/21/sovereignty-data-not-chips-stuttgart-sovereign-ai-factory-sc26/
+theCUBE Research,theCUBE Research,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/21/sovereignty-data-not-chips-stuttgart-sovereign-ai-factory-sc26/
+theCUBE AI Video Cloud,theCUBE AI Video Cloud,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/21/sovereignty-data-not-chips-stuttgart-sovereign-ai-factory-sc26/
+theCUBEai.com neural network,theCUBEai.com neural network,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/21/sovereignty-data-not-chips-stuttgart-sovereign-ai-factory-sc26/
+Perplexity,Perplexity,EXACT,1.0,NEWS,https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/
+Firecrawl,Firecrawl,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/
+Exa,Exa,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/
+Parallel,Parallel,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/
+ChatGPT,ChatGPT,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/
+Claude,Claude,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/
+Gemini,Gemini,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/
+Nvidia,NVIDIA,EXACT,1.0,NEWS,https://the-decoder.com/perplexitys-new-monitor-api-turns-web-search-from-a-one-off-query-into-a-nonstop-watchdog/
+Positron AI Inc.,Positron AI,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/21/inference-two-thirds-ai-workloads-chip-deployment-positron-sc26/
+Atlas server,Atlas server,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/21/inference-two-thirds-ai-workloads-chip-deployment-positron-sc26/
+Titan server,Titan server,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/21/inference-two-thirds-ai-workloads-chip-deployment-positron-sc26/
+Oracle Corp.,Oracle,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/21/inference-two-thirds-ai-workloads-chip-deployment-positron-sc26/
+theCUBE AI Video Cloud,theCUBE AI Video Cloud,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/21/inference-two-thirds-ai-workloads-chip-deployment-positron-sc26/
+METR,Metr,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/ai-is-getting-better-faster-than-experts-can-reliably-test-whether-new-systems-are-safe-metr-warns/
+AWS,Amazon Web Services,ALIAS,1.0,NEWS,https://siliconangle.com/2026/11/21/sovereign-ai-where-control-becomes-an-architectural-requirement/
+theCUBE,theCUBE,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/21/sovereign-ai-where-control-becomes-an-architectural-requirement/
+Dragos,Dragos,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/
+OpenRouter,OpenRouter,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/
+Novita,Novita,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/
+AtlasCloud,AtlasCloud,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/
+StreamLake,StreamLake,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/
+MiniMax,MiniMax,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/
+ARTEX,Artex,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/
+Claude,Claude,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/security-researchers-show-how-cheap-ai-inference-providers-steal-keys-and-snoop-on-users/
+Databricks Inc.,Databricks,EXACT,1.0,JOB,https://databricks.com/company/careers/open-positions/job?gh_jid=8916552002
+Harvey AI,Harvey,ALIAS,1.0,JOB,https://jobs.ashbyhq.com/harvey/a42047fc-fbd1-4e14-bf10-15207ae2d060
+Harvey AI,Harvey,ALIAS,1.0,JOB,https://jobs.ashbyhq.com/harvey/e46d48b8-57c7-401c-be33-f56774dc072d
+Plasmidsaurus,Plasmidsaurus,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163850-account-manager-france-benelux-m-f-x
+Filigran,Filigran,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163849-senior-customer-success-emea
+Plasmidsaurus,Plasmidsaurus,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163848-account-manager-dach-m-f-d
+Horizon3.ai,Horizon3.ai,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163847-commercial-account-executive-belgium
+Zip,Zip,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163846-solutions-integration-architect-ariba
+Huntress,Huntress,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163845-principal-security-operations-analyst
+Customer.io,Customer.io,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163844-sr-account-manager-amer
+"Scale AI, Inc.",Scale AI,EXACT,1.0,JOB,https://job-boards.greenhouse.io/scaleai/jobs/4747295005
+"Scale AI, Inc.",Scale AI,EXACT,1.0,JOB,https://job-boards.greenhouse.io/scaleai/jobs/4574113005
+"Scale AI, Inc.",Scale AI,EXACT,1.0,JOB,https://job-boards.greenhouse.io/scaleai/jobs/4689947005
+Kaseya,Kaseya,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163843-peer-success-manager-2
+Lemonade,Lemonade,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163842-actuary-uk
+TRM Labs,TRM Labs,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163841-lead-instructor-emea
+VTEX,Vtex,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163840-senior-product-manager-content-management
+Fever,Fever,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163838-tech-lead-3
+Fever,Fever,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163835-customer-service-agent-spanish-1200-2100
+Tala,Tala,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163834-senior-secops-engineer-2
+VTEX,Vtex,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163832-engineering-manager-product-discovery-my-account-experience
 Directed Edge,Directed Edge,NORMALIZED_NEW,0.7,STARTUP,https://www.ycombinator.com/companies/directed-edge
 JustSpotted,JustSpotted,NORMALIZED_NEW,0.7,STARTUP,https://www.ycombinator.com/companies/justspotted
 Canopy Labs,Canopy Labs,NORMALIZED_NEW,0.7,STARTUP,https://www.ycombinator.com/companies/canopy-labs
@@ -2515,134 +2585,6 @@ Luminary,Luminary,NORMALIZED_NEW,0.7,STARTUP,https://www.ycombinator.com/compani
 Vibe Robotics,Vibe Robotics,NORMALIZED_NEW,0.7,STARTUP,https://www.ycombinator.com/companies/vibe-robotics
 Render,Render,NORMALIZED_NEW,0.7,STARTUP,https://www.ycombinator.com/companies/render
 HIRO Industries,HIRO Industries,NORMALIZED_NEW,0.7,STARTUP,https://www.ycombinator.com/companies/hiro-industries
-Anthropic,Anthropic,EXACT,1.0,NEWS,https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure
-Claude,Claude,NORMALIZED_NEW,0.7,NEWS,https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure
-Microsoft,Microsoft,EXACT,1.0,NEWS,https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure
-Copilot,Copilot,NORMALIZED_NEW,0.7,NEWS,https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure
-Nvidia,NVIDIA,EXACT,1.0,NEWS,https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure
-OpenAI,OpenAI,EXACT,1.0,NEWS,https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure
-Instinct,Instinct,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/
-Ask Proxy,Ask Proxy,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/
-Caddy,Caddy,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/
-Folk,Folk,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/
-Haven,Haven,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/
-Poke,Poke,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/
-Underdog,Underdog,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/
-The Interaction Company,The Interaction,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/
-Cognition,Cognition,EXACT,1.0,NEWS,https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/
-Signull Labs,Signull Labs,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/
-Nvidia,NVIDIA,EXACT,1.0,NEWS,https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/
-GPT‑4,Gpt‐4,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/
-GPT‑5.6 Sol,GPT‐5.6 Sol,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/
-Nano Banana Pro,Nano Banana Pro,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/
-THE DECODER+,The Decoder+,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/
-AWS,Amazon Web Services,ALIAS,1.0,NEWS,https://siliconangle.com/2026/11/21/sovereign-ai-where-control-becomes-an-architectural-requirement/
-Shortical,Shortical,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/
-Inevitable,Inevitable,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/
-OpenAI,OpenAI,EXACT,1.0,NEWS,https://the-decoder.com/silicon-valleys-growing-obsession-with-ai-doomsday-is-turning-parts-of-the-tech-industry-toward-cult-like-devotion/
-Anthropic,Anthropic,EXACT,1.0,NEWS,https://the-decoder.com/silicon-valleys-growing-obsession-with-ai-doomsday-is-turning-parts-of-the-tech-industry-toward-cult-like-devotion/
-Claude,Claude,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/silicon-valleys-growing-obsession-with-ai-doomsday-is-turning-parts-of-the-tech-industry-toward-cult-like-devotion/
-AI Impacts,AI Impacts,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/silicon-valleys-growing-obsession-with-ai-doomsday-is-turning-parts-of-the-tech-industry-toward-cult-like-devotion/
-Dell Technologies,Dell Technologies,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/20/three-insights-missed-thecubes-coverage-dell-technologies-new-york-symposium-dellnewyorksymposium/
-theCUBE,theCUBE,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/20/three-insights-missed-thecubes-coverage-dell-technologies-new-york-symposium-dellnewyorksymposium/
-SiliconANGLE Media,SiliconANGLE Media,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/20/three-insights-missed-thecubes-coverage-dell-technologies-new-york-symposium-dellnewyorksymposium/
-Google DeepMind,Google DeepMind,EXACT,1.0,NEWS,https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/
-Facebook AI Research,Meta AI,ALIAS,1.0,NEWS,https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/
-Microsoft Research Cambridge,Microsoft Research Cambridge,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/
-Nvidia,NVIDIA,EXACT,1.0,NEWS,https://www.wired.com/story/jensen-huangs-lying-alarmed-nvidia-board-ahead-of-his-resignation/
-Jensen Huang,Jensen Huang,NORMALIZED_NEW,0.7,NEWS,https://www.wired.com/story/jensen-huangs-lying-alarmed-nvidia-board-ahead-of-his-resignation/
-Alice Huang,Alice Huang,NORMALIZED_NEW,0.7,NEWS,https://www.wired.com/story/jensen-huangs-lying-alarmed-nvidia-board-ahead-of-his-resignation/
-Harvey Jones,Harvey Jones,NORMALIZED_NEW,0.7,NEWS,https://www.wired.com/story/jensen-huangs-lying-alarmed-nvidia-board-ahead-of-his-resignation/
-Colette Kress,Colette Kress,NORMALIZED_NEW,0.7,NEWS,https://www.wired.com/story/jensen-huangs-lying-alarmed-nvidia-board-ahead-of-his-resignation/
-WIRED,Wired,NORMALIZED_NEW,0.7,NEWS,https://www.wired.com/story/jensen-huangs-lying-alarmed-nvidia-board-ahead-of-his-resignation/
-China Ministry of Foreign Affairs,China Ministry of Foreign Affairs,NORMALIZED_NEW,0.7,NEWS,https://www.wired.com/story/jensen-huangs-lying-alarmed-nvidia-board-ahead-of-his-resignation/
-OpenAI,OpenAI,EXACT,1.0,NEWS,https://the-decoder.com/openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-to-fix-brief-answers-and-unnecessary-questions/
-GPT-6.2 Astra,GPT-6.2 Astra,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-to-fix-brief-answers-and-unnecessary-questions/
-GPT-6.2 Sol,GPT-6.2 Sol,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-to-fix-brief-answers-and-unnecessary-questions/
-Responses API,Responses API,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/openai-shares-new-prompting-tips-for-gpt-6-2-astra-and-sol-to-fix-brief-answers-and-unnecessary-questions/
-Anthropic,Anthropic,EXACT,1.0,NEWS,https://siliconangle.com/2026/11/20/anthropic-researcher-claims-to-have-proven-riemann-hypothesis-using-claude/
-Claude,Claude,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/20/anthropic-researcher-claims-to-have-proven-riemann-hypothesis-using-claude/
-theCUBE AI Video Cloud,theCUBE AI Video Cloud,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/20/anthropic-researcher-claims-to-have-proven-riemann-hypothesis-using-claude/
-theCUBEai.com neural network,theCUBEai.com neural network,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/20/anthropic-researcher-claims-to-have-proven-riemann-hypothesis-using-claude/
-Anthropic,Anthropic,EXACT,1.0,NEWS,https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/
-Claude,Claude,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/
-Anthropic,Anthropic,EXACT,1.0,NEWS,https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/
-Claude,Claude,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/
-OpenAI,OpenAI,EXACT,1.0,NEWS,https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/
-DataDirect Networks Inc.,DataDirect Networks,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/20/ai-data-infrastructure-deals-shrink-year-to-30-days-sc26/
-Nvidia Corp.,NVIDIA,EXACT,1.0,NEWS,https://siliconangle.com/2026/11/20/ai-data-infrastructure-deals-shrink-year-to-30-days-sc26/
-Super Micro,Super Micro,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/20/ai-data-infrastructure-deals-shrink-year-to-30-days-sc26/
-Enterprise AI HyperPOD,Enterprise AI HyperPOD,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/20/ai-data-infrastructure-deals-shrink-year-to-30-days-sc26/
-Managed Lustre service,Managed Lustre service,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/20/ai-data-infrastructure-deals-shrink-year-to-30-days-sc26/
-Google LLC,Google,EXACT,1.0,NEWS,https://siliconangle.com/2026/11/20/ai-data-infrastructure-deals-shrink-year-to-30-days-sc26/
-Google Cloud,Google,ALIAS,1.0,NEWS,https://siliconangle.com/2026/11/20/ai-data-infrastructure-deals-shrink-year-to-30-days-sc26/
-theCUBE AI Video Cloud,theCUBE AI Video Cloud,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/20/ai-data-infrastructure-deals-shrink-year-to-30-days-sc26/
-theCUBEai.com neural network,theCUBEai.com neural network,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/20/ai-data-infrastructure-deals-shrink-year-to-30-days-sc26/
-EXAScaler deployment,EXAScaler deployment,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/20/ai-data-infrastructure-deals-shrink-year-to-30-days-sc26/
-Perplexity.ai,Perplexity,ALIAS,1.0,JOB,https://jobs.ashbyhq.com/Perplexity/d291c382-7252-45e5-8b47-ecec5d6be157
-Anthropic PBC,Anthropic,EXACT,1.0,JOB,https://job-boards.greenhouse.io/anthropic/jobs/5396186008
-Anthropic PBC,Anthropic,EXACT,1.0,JOB,https://job-boards.greenhouse.io/anthropic/jobs/5490950008
-Anthropic PBC,Anthropic,EXACT,1.0,JOB,https://job-boards.greenhouse.io/anthropic/jobs/5477150008
-Anthropic PBC,Anthropic,EXACT,1.0,JOB,https://job-boards.greenhouse.io/anthropic/jobs/5484875008
-Anthropic PBC,Anthropic,EXACT,1.0,JOB,https://job-boards.greenhouse.io/anthropic/jobs/5485591008
-Databricks Inc.,Databricks,EXACT,1.0,JOB,https://databricks.com/company/careers/open-positions/job?gh_jid=8013809002
-Harvey AI,Harvey,ALIAS,1.0,JOB,https://jobs.ashbyhq.com/harvey/3a17d706-b023-4f83-8250-d6da3151f1c0
-Harvey AI,Harvey,ALIAS,1.0,JOB,https://jobs.ashbyhq.com/harvey/a42047fc-fbd1-4e14-bf10-15207ae2d060
-Harvey AI,Harvey,ALIAS,1.0,JOB,https://jobs.ashbyhq.com/harvey/8eae5589-ecad-496e-9163-ef8611320afa
-Harvey AI,Harvey,ALIAS,1.0,JOB,https://jobs.ashbyhq.com/harvey/8680cdfe-c725-485d-9309-c96d5d64a82f
-Harvey AI,Harvey,ALIAS,1.0,JOB,https://jobs.ashbyhq.com/harvey/f35bede4-366e-4da6-832f-616917c95605
-Harvey AI,Harvey,ALIAS,1.0,JOB,https://jobs.ashbyhq.com/harvey/2704ed71-6584-4af5-94e5-f16564c8379b
-Harvey AI,Harvey,ALIAS,1.0,JOB,https://jobs.ashbyhq.com/harvey/994d18db-236e-4516-a949-ab6af1df3499
-Harvey AI,Harvey,ALIAS,1.0,JOB,https://jobs.ashbyhq.com/harvey/60819548-3220-4144-875f-6677693a45c7
-Harvey AI,Harvey,ALIAS,1.0,JOB,https://jobs.ashbyhq.com/harvey/e46d48b8-57c7-401c-be33-f56774dc072d
-Harvey AI,Harvey,ALIAS,1.0,JOB,https://jobs.ashbyhq.com/harvey/2adc1183-4d71-4277-871e-314b7669a241
-Harvey AI,Harvey,ALIAS,1.0,JOB,https://jobs.ashbyhq.com/harvey/1d43719f-da4a-4cb8-8865-d971107bd1f2
-"OpenAI, Inc.",OpenAI,EXACT,1.0,JOB,https://jobs.ashbyhq.com/openai/019170f9-ae56-49fc-8450-f505d39180bb
-"OpenAI, Inc.",OpenAI,EXACT,1.0,JOB,https://jobs.ashbyhq.com/openai/894ba35c-c6b6-4cf0-9451-f996aa695e49
-"OpenAI, Inc.",OpenAI,EXACT,1.0,JOB,https://jobs.ashbyhq.com/openai/5ebe5049-19e5-469e-a7bd-d8e34524220c
-"OpenAI, Inc.",OpenAI,EXACT,1.0,JOB,https://jobs.ashbyhq.com/openai/e586578c-2489-4214-92c4-d9639339fe59
-"OpenAI, Inc.",OpenAI,EXACT,1.0,JOB,https://jobs.ashbyhq.com/openai/38b069ad-857c-485e-b201-3bd7c0b91da4
-"OpenAI, Inc.",OpenAI,EXACT,1.0,JOB,https://jobs.ashbyhq.com/openai/0503a31f-5550-44e8-bec3-99b493532000
-"OpenAI, Inc.",OpenAI,EXACT,1.0,JOB,https://jobs.ashbyhq.com/openai/970e547c-5eda-4ab3-8a4d-c080a18eb4ac
-"OpenAI, Inc.",OpenAI,EXACT,1.0,JOB,https://jobs.ashbyhq.com/openai/f26bd8f0-5440-46bd-b6c0-8b7465f8e6dc
-"OpenAI, Inc.",OpenAI,EXACT,1.0,JOB,https://jobs.ashbyhq.com/openai/62032f94-87e8-45b8-968c-db9b8893e907
-"OpenAI, Inc.",OpenAI,EXACT,1.0,JOB,https://jobs.ashbyhq.com/openai/ebe31cd6-0b6a-4214-b3c1-7dd7074753d6
-Anthropic PBC,Anthropic,EXACT,1.0,JOB,https://job-boards.greenhouse.io/anthropic/jobs/5480986008
-Anthropic PBC,Anthropic,EXACT,1.0,JOB,https://job-boards.greenhouse.io/anthropic/jobs/5477753008
-Anthropic PBC,Anthropic,EXACT,1.0,JOB,https://job-boards.greenhouse.io/anthropic/jobs/5489567008
-Anthropic PBC,Anthropic,EXACT,1.0,JOB,https://job-boards.greenhouse.io/anthropic/jobs/5490492008
-Anthropic PBC,Anthropic,EXACT,1.0,JOB,https://job-boards.greenhouse.io/anthropic/jobs/5389305008
-Anthropic PBC,Anthropic,EXACT,1.0,JOB,https://job-boards.greenhouse.io/anthropic/jobs/5383114008
-"Scale AI, Inc.",Scale AI,EXACT,1.0,JOB,https://job-boards.greenhouse.io/scaleai/jobs/4757137005
-"Scale AI, Inc.",Scale AI,EXACT,1.0,JOB,https://job-boards.greenhouse.io/scaleai/jobs/4757344005
-"Scale AI, Inc.",Scale AI,EXACT,1.0,JOB,https://job-boards.greenhouse.io/scaleai/jobs/4701543005
-Databricks Inc.,Databricks,EXACT,1.0,JOB,https://databricks.com/company/careers/open-positions/job?gh_jid=8948986002
-Databricks Inc.,Databricks,EXACT,1.0,JOB,https://databricks.com/company/careers/open-positions/job?gh_jid=8821959002
-Lemonade,Lemonade,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163717-clx-property-advocate-uk-2
-Dropbox,Dropbox,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163716-senior-full-stack-product-software-engineer-application-platform
-Chainguard,Chainguard,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163715-enterprise-sales-engineer-france-2
-Databricks Inc.,Databricks,EXACT,1.0,JOB,https://databricks.com/company/careers/open-positions/job?gh_jid=8926037002
-Databricks Inc.,Databricks,EXACT,1.0,JOB,https://databricks.com/company/careers/open-positions/job?gh_jid=7987657002
-Databricks Inc.,Databricks,EXACT,1.0,JOB,https://databricks.com/company/careers/open-positions/job?gh_jid=7987658002
-Apaleo,Apaleo,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163714-onboarding-manager-france
-Precision Medicine Group,Precision Medicine Group,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163713-site-contracts-manager-2
-LastPass,LastPass,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163712-senior-product-design-manager
-Zone & Co,Zone &,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163711-account-executive-40
-Lemonade,Lemonade,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163710-actuarial-associate-uk-2
-Dropbox,Dropbox,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163709-infrastructure-software-engineer-orchestration
-Chainguard,Chainguard,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163708-business-development-representative-nordics-2
-Databricks Inc.,Databricks,EXACT,1.0,JOB,https://databricks.com/company/careers/open-positions/job?gh_jid=8637781002
-Language Services Associates,Language Services Associates,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163707-tongan-interpreter
-Temporal Technologies,Temporal Technologies,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163706-senior-software-engineer-cloud-data-storage
-VTEX,Vtex,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163705-analytics-engineer-campaign-intelligence
-Walker Sands,Walker Sands,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163704-director-paid-media-strategy
-Databricks Inc.,Databricks,EXACT,1.0,JOB,https://databricks.com/company/careers/open-positions/job?gh_jid=8957103002
-Databricks Inc.,Databricks,EXACT,1.0,JOB,https://databricks.com/company/careers/open-positions/job?gh_jid=8951023002
-Databricks Inc.,Databricks,EXACT,1.0,JOB,https://databricks.com/company/careers/open-positions/job?gh_jid=8479031002
-Databricks Inc.,Databricks,EXACT,1.0,JOB,https://databricks.com/company/careers/open-positions/job?gh_jid=8431459002
-Oddball,Oddball,NORMALIZED_NEW,0.7,JOB,https://jobicy.com/jobs/163702-508-compliance-specialist
-Perplexity.ai,Perplexity,ALIAS,1.0,JOB,https://jobs.ashbyhq.com/Perplexity/35eb74aa-63e6-485a-a1da-061d4004ab50
-Perplexity.ai,Perplexity,ALIAS,1.0,JOB,https://jobs.ashbyhq.com/Perplexity/179dfb70-1190-4e92-9f9a-a63218d36ca4
 Thinking Machines Lab,Thinking Machines Lab,EXACT,1.0,PRODUCT,https://openrouter.ai/thinkingmachines/inkling-2-mini
 radixark,Radixark,NORMALIZED_NEW,0.7,PRODUCT,https://openrouter.ai/radixark/daisyrose-27b
 Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://openrouter.ai/mistralai/pixtral-large-2502
@@ -3342,8 +3284,8 @@ NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/spaces/nvidia/simready-ce
 Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/allenai/reward-bench
 Salesforce,Salesforce,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/Salesforce/BLIP
 Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/spaces/stabilityai/stable-diffusion-3.5-large-turbo
-Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/Qwen/Qwen3-TTS-Demo
 huggingface-projects,Huggingface-projects,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/huggingface-projects/Deep-Reinforcement-Learning-Leaderboard
+Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/Qwen/Qwen3-TTS-Demo
 BigCode,BigCode,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/bigcode/bigcode-playground
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/ByteDance/AnimateDiff-Lightning
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/Qwen/Qwen-Image-2512
@@ -3354,36 +3296,35 @@ Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spac
 HuggingFaceM4,Hugging Face,FUZZY,0.9167,PRODUCT,https://huggingface.co/spaces/HuggingFaceM4/idefics_playground
 Directed Edge,Directed Edge,NORMALIZED_NEW,0.7,PRODUCT,https://www.ycombinator.com/companies/directed-edge
 OpenCurriculum,OpenCurriculum,NORMALIZED_NEW,0.7,PRODUCT,https://www.ycombinator.com/companies/opencurriculum
+Checkr,Checkr,NORMALIZED_NEW,0.7,PRODUCT,https://www.ycombinator.com/companies/checkr
 MiniMax,MiniMax,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/MiniMaxAI/minimax-h3-image
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/spaces/nvidia/PhysicalAI-Human-1M-Explorer
 StepFun,StepFun,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/stepfun-ai/StepAudio-3-Music
-Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/black-forest-labs/flux-3-image-klein
 MiniMax,MiniMax,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/MiniMaxAI/ecosystem
+Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/black-forest-labs/flux-3-image-klein
 huggingface,Hugging Face,EXACT,1.0,PRODUCT,https://huggingface.co/spaces/huggingface/hub-stats
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/spaces/nvidia/DVSM
-Fish Audio,Fish Audio,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/fishaudio/Drama-3
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/LiquidAI/LFM3-Omni-2B-WebGPU
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/spaces/nvidia/rfd4-proteina-zerogpu
+Fish Audio,Fish Audio,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/fishaudio/Drama-3
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/ByteDance-Seed/SeedVR2-3B
+NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/spaces/nvidia/NVIDIA-NemotronLabs-RE-USE
+Lightricks,Lightricks,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/Lightricks/LTX-2.5
+Tencent,Tencent,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/tencent/Hunyuan3D-2mini-Turbo
+Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/Qwen/Qwen3-ASR-Demo
 Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/black-forest-labs/FLUX.2-klein-4B
 Ultralytics,Ultralytics,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/Ultralytics/YOLO26
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/spaces/nvidia/Kimodo
-NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/spaces/nvidia/NVIDIA-NemotronLabs-RE-USE
-NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/spaces/nvidia/nemotron-transcribe
-Tencent,Tencent,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/tencent/Hunyuan3D-2mini-Turbo
-Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/Qwen/Qwen3-ASR-Demo
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/Qwen/QwenScope
 Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/spaces/facebook/vggt-omega
 huggingface,Hugging Face,EXACT,1.0,PRODUCT,https://huggingface.co/spaces/huggingface/paperswithcode
-Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/LiquidAI/prompt-routing
-huggingface,Hugging Face,EXACT,1.0,PRODUCT,https://huggingface.co/spaces/huggingface/whos-shipping-open-source-ai
-Lightricks,Lightricks,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/Lightricks/LTX-2.5
+Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/LiquidAI/LFM2.5-2.6B-WebGPU
+IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/ibm-granite/granite-speech-streaming-webgpu
 OpenBMB,OpenBMB,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/openbmb/MiniCPM-V-4.7-Demo
-Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/LiquidAI/system-one-arcade
+NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/spaces/nvidia/nemotron-transcribe
 IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/ibm-granite/LLMON-Attention-Visualization
 OpenBMB,OpenBMB,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/spaces/openbmb/MiniCPM-OCR
 HuggingFaceM4,Hugging Face,FUZZY,0.9167,PRODUCT,https://huggingface.co/spaces/HuggingFaceM4/voice-agents-demo
-Checkr,Checkr,NORMALIZED_NEW,0.7,PRODUCT,https://www.ycombinator.com/companies/checkr
 Qventus,Qventus,NORMALIZED_NEW,0.7,PRODUCT,https://www.ycombinator.com/companies/qventus
 Akido Labs,Akido Labs,NORMALIZED_NEW,0.7,PRODUCT,https://www.ycombinator.com/companies/akido-labs
 Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
@@ -3394,8 +3335,8 @@ Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/meta-llama/Prompt-Guard
 Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/meta-llama/Llama-3.1-8B
 Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/meta-llama/Llama-3.1-405B-FP8
-Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/meta-llama/Llama-3.2-3B
+Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/meta-llama/Llama-Guard-4-12B
 Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/meta-llama/Llama-2-7b-hf
 Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/meta-llama/Llama-2-13b-chat-hf
@@ -3451,7 +3392,6 @@ OpenAI,OpenAI,EXACT,1.0,PRODUCT,https://huggingface.co/openai/whisper-medium
 OpenAI,OpenAI,EXACT,1.0,PRODUCT,https://huggingface.co/openai/whisper-small.en
 OpenAI,OpenAI,EXACT,1.0,PRODUCT,https://huggingface.co/openai/whisper-base.en
 OpenAI,OpenAI,EXACT,1.0,PRODUCT,https://huggingface.co/openai/whisper-tiny.en
-Zeitview,Zeitview,NORMALIZED_NEW,0.7,PRODUCT,https://www.ycombinator.com/companies/zeitview
 OpenAI,OpenAI,EXACT,1.0,PRODUCT,https://huggingface.co/openai/privacy-filter
 OpenAI,OpenAI,EXACT,1.0,PRODUCT,https://huggingface.co/openai/whisper-large-v2
 OpenAI,OpenAI,EXACT,1.0,PRODUCT,https://huggingface.co/openai/gpt-oss-safeguard-20b
@@ -3469,8 +3409,8 @@ Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Mistral
 Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1
 Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Ministral-3-14B-Reasoning-2512
 Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Mistral-7B-v0.3
-Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512
 Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Voxtral-Mini-3B-2507
+Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512
 Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
 Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1
 Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506
@@ -3483,16 +3423,16 @@ Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Ministr
 Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Ministral-8B-Instruct-2410
 Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-BF16
 Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-GGUF
-Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF
 Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-BF16
 Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-BF16
+Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF
 Mistral AI,Mistral AI,EXACT,1.0,PRODUCT,https://huggingface.co/mistralai/Mistral-Nemo-Base-2407
 DeepSeek,DeepSeek,EXACT,1.0,PRODUCT,https://huggingface.co/deepseek-ai/DeepSeek-V3.2
 DeepSeek,DeepSeek,EXACT,1.0,PRODUCT,https://huggingface.co/deepseek-ai/DeepSeek-OCR
 DeepSeek,DeepSeek,EXACT,1.0,PRODUCT,https://huggingface.co/deepseek-ai/DeepSeek-R1
-DeepSeek,DeepSeek,EXACT,1.0,PRODUCT,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 DeepSeek,DeepSeek,EXACT,1.0,PRODUCT,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 DeepSeek,DeepSeek,EXACT,1.0,PRODUCT,https://huggingface.co/deepseek-ai/DeepSeek-V3
+DeepSeek,DeepSeek,EXACT,1.0,PRODUCT,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 DeepSeek,DeepSeek,EXACT,1.0,PRODUCT,https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 DeepSeek,DeepSeek,EXACT,1.0,PRODUCT,https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
 DeepSeek,DeepSeek,EXACT,1.0,PRODUCT,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
@@ -3509,8 +3449,8 @@ DeepSeek,DeepSeek,EXACT,1.0,PRODUCT,https://huggingface.co/deepseek-ai/DeepSeek-
 DeepSeek,DeepSeek,EXACT,1.0,PRODUCT,https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
 DeepSeek,DeepSeek,EXACT,1.0,PRODUCT,https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
 DeepSeek,DeepSeek,EXACT,1.0,PRODUCT,https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
-DeepSeek,DeepSeek,EXACT,1.0,PRODUCT,https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat
 DeepSeek,DeepSeek,EXACT,1.0,PRODUCT,https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp
+DeepSeek,DeepSeek,EXACT,1.0,PRODUCT,https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat
 DeepSeek,DeepSeek,EXACT,1.0,PRODUCT,https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct
 Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/Florence-2-base
 Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/mdeberta-v3-base
@@ -3527,15 +3467,15 @@ Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/wavlm-bas
 Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/layoutlmv3-base
 Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/wavlm-base-plus
 Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/deberta-v3-small
-Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/swinv2-tiny-patch4-window16-256
 Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/speecht5_tts
+Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/swinv2-tiny-patch4-window16-256
 Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/trocr-base-printed
 Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/Florence-2-large
-Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/Phi-4-mini-instruct
+Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/table-transformer-detection
-Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/trocr-small-handwritten
+Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 Microsoft,Microsoft,EXACT,1.0,PRODUCT,https://huggingface.co/microsoft/speecht5_hifigan
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/Cosmos3-Nano
@@ -3543,19 +3483,19 @@ NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/Gemma-4-26B-A4B-NV
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/bigvgan_v2_22khz_80band_256x
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/bigvgan_v2_44khz_128band_512x
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
-NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/Gemma-4-31B-IT-NVFP4
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16
+NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/Gemma-4-31B-IT-NVFP4
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
-NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
-NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/Qwen2.5-VL-7B-Instruct-NVFP4
+NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/NVIDIA-Nemotron-Parse-2.0
+NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/Qwen2.5-VL-7B-Instruct-NVFP4
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-NVFP4
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/Cosmos-Reason2-2B
-NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/Cosmos-Embed1-224p
+NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/llama-nemotron-embed-1b-v2
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4
 NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/personaplex-7b-v1
@@ -3565,42 +3505,42 @@ NVIDIA,NVIDIA,EXACT,1.0,PRODUCT,https://huggingface.co/nvidia/segformer-b0-finet
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3-0.6B
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3-14B
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
+Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
-Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3.5-9B
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3.8-27B
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3-8B
-Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3.5-9B
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3.5-2B
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
-Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3.5-4B
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
+Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3.5-4B
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3-32B
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3-4B
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3-Reranker-4B
-Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3-1.7B
+Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3.5-0.8B
+Alibaba Qwen,Alibaba Qwen,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct-GGUF
 Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/sdxl-turbo
-Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/sd-turbo
 Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/sd-vae-ft-mse
+Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/sd-turbo
 Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt
-Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/sdxl-vae
 Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/TripoSR
+Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/sdxl-vae
 Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/stable-audio-3-medium
 Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0
 Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/stable-audio-3-small-sfx
 Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
 Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/stable-video-diffusion-img2vid
-Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/stable-diffusion-3-medium-diffusers
 Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/stable-audio-3-optimized
+Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/stable-diffusion-3-medium-diffusers
 Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/stable-diffusion-3.5-large
 Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/stable-virtual-camera
 Stability AI,Stability AI,EXACT,1.0,PRODUCT,https://huggingface.co/stabilityai/stable-audio-3-small-music
@@ -3617,8 +3557,8 @@ Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingfa
 Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/black-forest-labs/FLUX.2-klein-4b-fp8
 Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/black-forest-labs/FLUX.1-dev
-Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/black-forest-labs/FLUX.2-dev
 Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/black-forest-labs/FLUX.1-schnell
+Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/black-forest-labs/FLUX.2-dev
 Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev
 Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/black-forest-labs/FLUX.2-small-decoder
 Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/black-forest-labs/flux-3-image-klein
@@ -3636,14 +3576,15 @@ Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingfa
 Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/black-forest-labs/FLUX.2-dev-NVFP4
 Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/black-forest-labs/FLUX.1-Redux-dev
 Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv
-Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-nvfp4
+Black Forest Labs,Black Forest Labs,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4b-nvfp4
 Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/longformer-base-4096
 Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/specter2_base
-Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/scibert_scivocab_uncased
-Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/olmOCR-2-7B-1025-FP8
 Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/wildguard
+Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/olmOCR-2-7B-1025-FP8
+Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/scibert_scivocab_uncased
 Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/OLMo-2-0425-1B
 Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/Olmo-3-7B-Instruct
+Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/OLMoE-1B-7B-0125-Instruct
 Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/Olmo-3-1025-7B
 Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/olmOCR-2-7B-1025
 Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/Olmo-3-7B-Think
@@ -3652,16 +3593,15 @@ Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https:/
 Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/Molmo2-8B
 Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/Molmo2-4B
 Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct
-Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/OLMoE-1B-7B-0924
 Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/OLMo-2-1124-7B
-Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/OLMoE-1B-7B-0125-Instruct
-Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/olmOCR-7B-0225-preview
+Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/OLMoE-1B-7B-0924
 Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/DataDecide-dolma1_7-1B
+Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/olmOCR-7B-0225-preview
 Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/Molmo2-O-7B
 Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/biomed_roberta_base
 Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/OLMo-1B-hf
-Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/Olmo-3.1-32B-Instruct
 Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/Olmo-3-1125-32B
+Allen Institute for AI,Allen Institute for AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/allenai/Olmo-3.1-32B-Instruct
 BAAI,Baai,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/BAAI/bge-small-en-v1.5
 BAAI,Baai,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/BAAI/bge-m3
 BAAI,Baai,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/BAAI/bge-reranker-v2-m3
@@ -3722,15 +3662,15 @@ IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-4.
 IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-4.2-3b-GGUF
 IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-4.2-30b-GGUF
 IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-embedding-97m-multilingual-r2
-IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-4.0-1b-speech
-IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-embedding-125m-english
 IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-embedding-278m-multilingual
+IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-embedding-125m-english
+IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-4.0-1b-speech
 IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-speech-4.1-2b-nar
 IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-3.1-3b-a800m-instruct
 IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc-nc
+IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-4.1-30b-fp8
 IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2
 IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-3.3-8b-instruct
-IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-4.1-30b-fp8
 IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-vision-3.3-2b
 IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-embedding-311m-multilingual-r2
 IBM,Ibm,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ibm-granite/granite-vision-4.1-4b
@@ -3755,8 +3695,8 @@ Salesforce,Salesforce,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Salesfor
 Salesforce,Salesforce,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Salesforce/codegen-350M-mono
 Salesforce,Salesforce,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Salesforce/codet5-small
 Salesforce,Salesforce,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Salesforce/moirai-1.1-R-large
-Salesforce,Salesforce,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Salesforce/blip2-itm-vit-g
 Salesforce,Salesforce,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Salesforce/ctrl
+Salesforce,Salesforce,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Salesforce/blip2-itm-vit-g
 Salesforce,Salesforce,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Salesforce/codet5p-220m
 Salesforce,Salesforce,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Salesforce/moirai-1.0-R-small
 Salesforce,Salesforce,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Salesforce/instructblip-vicuna-7b
@@ -3764,8 +3704,8 @@ Salesforce,Salesforce,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Salesfor
 Salesforce,Salesforce,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Salesforce/xLAM-1b-fc-r
 Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/facebook/contriever
 Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/facebook/opt-125m
-Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/facebook/dinov2-base
 Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/facebook/bart-large-mnli
+Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/facebook/dinov2-base
 Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/facebook/wav2vec2-base
 Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/facebook/dinov2-small
 Meta AI,Meta AI,EXACT,1.0,PRODUCT,https://huggingface.co/facebook/musicgen-medium
@@ -3805,17 +3745,17 @@ Cohere,Cohere,EXACT,1.0,PRODUCT,https://huggingface.co/CohereLabs/tiny-aya-base
 Cohere,Cohere,EXACT,1.0,PRODUCT,https://huggingface.co/CohereLabs/aya-expanse-32b
 Cohere,Cohere,EXACT,1.0,PRODUCT,https://huggingface.co/CohereLabs/aya-101
 Cohere,Cohere,EXACT,1.0,PRODUCT,https://huggingface.co/CohereLabs/c4ai-command-a-03-2025
-Cohere,Cohere,EXACT,1.0,PRODUCT,https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024
 Cohere,Cohere,EXACT,1.0,PRODUCT,https://huggingface.co/CohereLabs/tiny-aya-fire
 Cohere,Cohere,EXACT,1.0,PRODUCT,https://huggingface.co/CohereLabs/tiny-aya-water-GGUF
 Cohere,Cohere,EXACT,1.0,PRODUCT,https://huggingface.co/CohereLabs/c4ai-command-r7b-arabic-02-2025
+Cohere,Cohere,EXACT,1.0,PRODUCT,https://huggingface.co/CohereLabs/c4ai-command-r7b-12-2024
 Cohere,Cohere,EXACT,1.0,PRODUCT,https://huggingface.co/CohereLabs/aya-vision-8b
 Cohere,Cohere,EXACT,1.0,PRODUCT,https://huggingface.co/CohereLabs/North-Mini-Code-1.0-eagle
 Cohere,Cohere,EXACT,1.0,PRODUCT,https://huggingface.co/CohereLabs/tiny-aya-fire-GGUF
 EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-160m
 EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-70m-deduped
-EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/gpt-neo-125m
 EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-14m
+EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/gpt-neo-125m
 EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/gpt-neox-20b
 EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-70m
 EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-410m
@@ -3824,19 +3764,19 @@ EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/Eleuther
 EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/gpt-j-6b
 EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-2.8b
 EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-410m-deduped
-EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/gpt-neo-1.3B
 EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-1b
+EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/gpt-neo-1.3B
 EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/enformer-official-rough
 EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-160m-seed1
 EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-31m
-EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-1.4b-deduped
 EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-6.9b
+EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-1.4b-deduped
 EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-1b-deduped
 EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/gpt-neo-2.7B
-EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-160m-seed2
 EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-2.8b-deduped
-EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-12b
+EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-160m-seed2
 EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-70m-seed1
+EleutherAI,EleutherAI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/EleutherAI/pythia-12b
 Nous Research,Nous Research,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B
 Nous Research,Nous Research,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/NousResearch/Meta-Llama-3.1-8B-Instruct
 Nous Research,Nous Research,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/NousResearch/Llama-2-7b-hf
@@ -3844,8 +3784,8 @@ Nous Research,Nous Research,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/No
 Nous Research,Nous Research,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B-GGUF
 Nous Research,Nous Research,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B-GGUF
 Nous Research,Nous Research,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/NousResearch/Llama-3.2-1B
-Nous Research,Nous Research,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/NousResearch/Meta-Llama-3.1-8B
 Nous Research,Nous Research,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/NousResearch/Hermes-4.3-36B-GGUF
+Nous Research,Nous Research,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/NousResearch/Meta-Llama-3.1-8B
 Nous Research,Nous Research,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/NousResearch/Meta-Llama-3-8B
 Nous Research,Nous Research,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
 Nous Research,Nous Research,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/NousResearch/Arete-27B
@@ -3864,29 +3804,29 @@ Nous Research,Nous Research,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/No
 Nous Research,Nous Research,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/NousResearch/Meta-Llama-3-70B-Instruct
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM3-Omni-2B-GGUF
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B-JP-GGUF
-Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B-GGUF
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
+Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B-GGUF
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM3-Audio-2B-GGUF
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-350M-GGUF
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-GGUF
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM3-VL-2B-GGUF
-Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-230M-Base
-Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF
-Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-350M
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM3-1.7B
+Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/d1-Omni-2B-GGUF
+Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-230M-Base
+Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-350M
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
-Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2-350M-Extract-GGUF
+Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-2.6B-GGUF
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/d1-2B-GGUF
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2-VL-1.6B-GGUF
-Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-VL-450M
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B-GGUF
+Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-VL-450M
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-ColBERT-350M
-Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2.5-230M-GGUF
 Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM2-2.6B-GGUF
+Liquid AI,Liquid AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/LiquidAI/LFM3-VL-2B
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/UI-TARS-1.5-7B
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/SeedVR2-3B
@@ -3894,22 +3834,22 @@ ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/academic-ds-9B
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/Seed-Coder-8B-Instruct
+ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/BFS-Prover-V2-7B
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/UI-TARS-72B-DPO
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/UI-TARS-7B-DPO
-ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/BFS-Prover-V2-7B
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/UI-TARS-2B-SFT
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Base
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/Seed-Coder-8B-Reasoning
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/BFS-Prover-V1-7B
-ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/Seed-X-Instruct-7B
-ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/M3-Agent-Control
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/Seed-Coder-8B-Reasoning-bf16
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/VINCIE-3B
+ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/M3-Agent-Control
+ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/Seed-X-Instruct-7B
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/Cola2
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/Tar-7B
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/Tar-1.5B
-ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/Seed-Coder-8B-Base
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/TaskMem
+ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/Seed-Coder-8B-Base
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/SeedVR-3B
 ByteDance,ByteDance,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/ByteDance-Seed/Seed-X-PPO-7B
 Moonshot AI,Moonshot AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/moonshotai/Kimi-K3
@@ -3936,8 +3876,8 @@ MiniMax,MiniMax,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/MiniMaxAI/Mini
 MiniMax,MiniMax,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/MiniMaxAI/MiniMax-H3-Image
 MiniMax,MiniMax,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/MiniMaxAI/MiniMax-M2.5
 MiniMax,MiniMax,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/MiniMaxAI/MiniMax-M2.7
-MiniMax,MiniMax,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 MiniMax,MiniMax,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/MiniMaxAI/MiniMax-M3
+MiniMax,MiniMax,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 MiniMax,MiniMax,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/MiniMaxAI/MiniMax-M2
 MiniMax,MiniMax,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/MiniMaxAI/MiniMax-M3-MXFP8
 MiniMax,MiniMax,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/MiniMaxAI/MiniMax-M1-40k
@@ -3960,26 +3900,26 @@ Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-
 Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-OCR
 Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-5.3
 Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-4.7-Flash
+Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-5.2
 Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-4.5-Air
 Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-5
-Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-5.2
 Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-5.1
 Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/chatglm2-6b
 Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-4.5
-Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-5.2-FP8
 Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-4.6V-Flash
-Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-4.7
+Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-5.2-FP8
 Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-5-FP8
+Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-4.7
 Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-5.3-BF16
 Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/glm-4-9b-chat
-Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-4.1V-9B-Thinking
 Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/chatglm3-6b
+Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-4.1V-9B-Thinking
 Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-Z1-32B-0414
 Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/glm-4-voice-tokenizer
-Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-4.6
 Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-4-9B-0414
-Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-5.1-FP8
+Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-4.6
 Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-ASR-Nano-2512
+Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/GLM-5.1-FP8
 Zhipu AI,Zhipu AI,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/zai-org/glm-4-9b
 AI21 Labs,AI21 Labs,EXACT,1.0,PRODUCT,https://huggingface.co/ai21labs/Jamba-tiny-dev
 AI21 Labs,AI21 Labs,EXACT,1.0,PRODUCT,https://huggingface.co/ai21labs/AI21-Jamba-Reasoning-3B
@@ -4015,14 +3955,14 @@ Technology Innovation Institute,Technology Innovation Institute,NORMALIZED_NEW,0
 Technology Innovation Institute,Technology Innovation Institute,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/tiiuae/falcon-mamba-7b-instruct-Q4_K_M-GGUF
 Technology Innovation Institute,Technology Innovation Institute,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/tiiuae/Falcon-OCR
 Technology Innovation Institute,Technology Innovation Institute,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/tiiuae/Falcon-H1-1.5B-Deep-Instruct
-Technology Innovation Institute,Technology Innovation Institute,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/tiiuae/falcon-mamba-7b
-Technology Innovation Institute,Technology Innovation Institute,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/tiiuae/Falcon-H1-7B-Instruct
 Technology Innovation Institute,Technology Innovation Institute,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/tiiuae/Falcon-H1-Tiny-90M-Instruct-GGUF
-Technology Innovation Institute,Technology Innovation Institute,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/tiiuae/Falcon-H1R-7B-GGUF
+Technology Innovation Institute,Technology Innovation Institute,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/tiiuae/Falcon-H1-7B-Instruct
+Technology Innovation Institute,Technology Innovation Institute,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/tiiuae/falcon-mamba-7b
 Technology Innovation Institute,Technology Innovation Institute,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/tiiuae/Falcon-H1-1.5B-Instruct
-Technology Innovation Institute,Technology Innovation Institute,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct
 Technology Innovation Institute,Technology Innovation Institute,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/tiiuae/Falcon-H1-Tiny-90M-Instruct
+Technology Innovation Institute,Technology Innovation Institute,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct
 Technology Innovation Institute,Technology Innovation Institute,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/tiiuae/falcon-mamba-7b-instruct
+Technology Innovation Institute,Technology Innovation Institute,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/tiiuae/Falcon-H1-7B-Instruct-GGUF
 Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/all-mpnet-base-v2
@@ -4031,9 +3971,9 @@ Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://h
 Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L6-v2
 Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/distiluse-base-multilingual-cased-v1
-Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/all-distilroberta-v1
 Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L3-v2
 Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/multi-qa-mpnet-base-dot-v1
+Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/all-distilroberta-v1
 Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/LaBSE
 Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/distiluse-base-multilingual-cased-v2
 Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/multi-qa-MiniLM-L6-cos-v1
@@ -4046,18 +3986,9 @@ Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://h
 Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/multi-qa-MiniLM-L6-dot-v1
 Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/msmarco-MiniLM-L6-v3
 Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/paraphrase-xlm-r-multilingual-v1
-Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/paraphrase-MiniLM-L12-v2
 Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/multi-qa-mpnet-base-cos-v1
-The Interaction Company of California,The Interaction Company of California,NORMALIZED_NEW,0.7,NEWS,https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/
-Microsoft,Microsoft,EXACT,1.0,NEWS,https://www.wired.com/story/brace-yourself-for-years-of-outage-chaos/
-Apple,Apple,NORMALIZED_NEW,0.7,NEWS,https://www.wired.com/story/brace-yourself-for-years-of-outage-chaos/
-Microsoft 365,Microsoft 365,NORMALIZED_NEW,0.7,NEWS,https://www.wired.com/story/brace-yourself-for-years-of-outage-chaos/
-LLMs,LLMs,NORMALIZED_NEW,0.7,NEWS,https://www.wired.com/story/brace-yourself-for-years-of-outage-chaos/
-GPT 5.6 Sol,GPT 5.6 Sol,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/nvidia-researchers-argue-huge-ai-context-windows-are-a-dead-end/
-Positron AI Inc.,Positron AI,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/21/inference-two-thirds-ai-workloads-chip-deployment-positron-sc26/
-Atlas server,Atlas server,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/21/inference-two-thirds-ai-workloads-chip-deployment-positron-sc26/
-Titan server,Titan server,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/21/inference-two-thirds-ai-workloads-chip-deployment-positron-sc26/
-Oracle Corp.,Oracle,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/21/inference-two-thirds-ai-workloads-chip-deployment-positron-sc26/
-theCUBE AI Video Cloud,theCUBE AI Video Cloud,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/21/inference-two-thirds-ai-workloads-chip-deployment-positron-sc26/
-theCUBEai.com neural network,theCUBEai.com neural network,NORMALIZED_NEW,0.7,NEWS,https://siliconangle.com/2026/11/21/inference-two-thirds-ai-workloads-chip-deployment-positron-sc26/
-Maple,Maple,NORMALIZED_NEW,0.7,NEWS,https://the-decoder.com/silicon-valleys-growing-obsession-with-ai-doomsday-is-turning-parts-of-the-tech-industry-toward-cult-like-devotion/
+Sentence Transformers,Sentence Transformers,NORMALIZED_NEW,0.7,PRODUCT,https://huggingface.co/sentence-transformers/msmarco-MiniLM-L12-cos-v5
+Zeitview,Zeitview,NORMALIZED_NEW,0.7,PRODUCT,https://www.ycombinator.com/companies/zeitview
+xAI Corp.,xAI,EXACT,1.0,JOB,https://job-boards.greenhouse.io/xai/jobs/5205848007
+"OpenAI, Inc.",OpenAI,EXACT,1.0,JOB,https://jobs.ashbyhq.com/openai/ce15d226-65db-43f1-98ec-078e96a3a281
+xAI Corp.,xAI,EXACT,1.0,JOB,https://job-boards.greenhouse.io/xai/jobs/5293897007
